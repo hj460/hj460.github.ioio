@@ -1,0 +1,55 @@
+/* ... (todo tu CSS anterior) ... */
+
+
+/* *** NUEVAS LÍNEAS PARA RESPONSIVIDAD EN TELÉFONOS *** */
+
+@media (max-width: 600px) {
+    /* Ajustes generales para pantallas más pequeñas que 600px de ancho */
+    .container {
+        padding: 30px 20px; /* Reduce un poco el padding */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Reduce el tamaño del título */
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1em; /* Ajusta el tamaño del párrafo */
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        flex-direction: column; /* Apila los botones verticalmente en pantallas pequeñas */
+        gap: 15px; /* Reduce el espacio entre botones apilados */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    button {
+        padding: 12px 25px; /* Ajusta el padding de los botones */
+        font-size: 1.1em; /* Ajusta el tamaño de la fuente de los botones */
+        width: 100%; /* Haz que los botones ocupen todo el ancho disponible */
+    }
+
+    /* Ajustes para el botón 'No' cuando se mueve, si aún es relevante en el móvil */
+    #noBtn {
+        /* No necesitas cambiar mucho aquí si ya usa 'fixed' y window.innerWidth/Height */
+        /* Asegúrate de que el margen de 20px en JS sea suficiente o ajústalo */
+    }
+
+    /* Si el fondo de tulipanes tiene problemas de rendimiento o visualización en móviles,
+       puedes deshabilitar la animación o usar una imagen más sencilla: */
+    /*
+    body {
+        animation: none;
+        background-position: center center;
+        background-size: cover; // Para que la imagen cubra toda la pantalla sin animarse
+    }
+    */
+}
+
+/* Puedes añadir más media queries si lo necesitas para rangos específicos:
+@media (max-width: 400px) {
+    // Más ajustes para pantallas extremadamente pequeñas
+}
+*/
